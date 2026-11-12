@@ -2,7 +2,10 @@
 name: Build AI Clipper Indonesia APK
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
 
 jobs:
   build:
